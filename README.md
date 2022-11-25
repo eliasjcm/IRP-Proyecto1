@@ -29,7 +29,7 @@ Copyright (C) 2022  Roy Garcia Alvarado - rvga1311@estudiantec.cr & Abiel Porras
 [Licencia](https://github.com/rvga1311/IRP-FingerprintRecognition/blob/main/LICENSE)
 
 # Datos
-El sistema fue desarrollado en Python 3.10.5 y utiliza la biblioteca OpenCV para el procesamiento de imagenes y la biblioteca tkinter para la interfaz grafica.
+El sistema fue desarrollado en Python 3.10.5 utilizando Jupyter Notebooks, la biblioteca OpenCV para el procesamiento de imagenes, y Tensorflow para el desarrollo de la red neuronal.
 
 ## Requerimientos para usar el sistema
 + Python 3.8 o superior
@@ -42,6 +42,7 @@ El sistema fue desarrollado en Python 3.10.5 y utiliza la biblioteca OpenCV para
 + Biblioteca ```pandas ``` para mostrar datos probabilísticos salidos de la red neuronal.
 + Biblioteca ```IPython.display``` para mostrar renderizar en consola la salida de ```pandas ```.
 + Biblioteca ```seaborn``` útil para mostrar la matriz de confusión. La anterior permite visualizar de mejor manera los aciertos y fallos, producto de la red neuronal. 
++ Herramienta ``Jupyter``, debe instalar Anaconda para poder hacer uso de esta herramienta.
 
 ## Nota importante
 El sistema fue desarrollado en Windows 11. En caso de que el sistema sea ejecutado en otros sistemas operativos, por lo tanto, es posible que funciones pertenecientes a la biblioteca ```os``` deban ser reemplazadas por su homóloga respectiva.

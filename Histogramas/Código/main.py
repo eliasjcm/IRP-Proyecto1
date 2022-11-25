@@ -1,3 +1,37 @@
+'''
+    Reconocedor de dígitos escritos a mano - main.py
+
+    Este programa utiliza histogramas para reconocer dígitos escritos a mano.
+    Para ello, se utiliza la librería OpenCV para obtener los histogramas de cada
+    imagen, y se comparan con los histogramas de las imágenes de entrenamiento.
+    El programa se divide en 3 partes:
+        - Separación de imágenes en imágenes de entrenamiento y de prueba
+        - Cálculo de estadísticas
+        - Prueba del programa
+        
+
+
+    Copyright (C) 2022  Roy Garcia Alvarado - rvga1311@estudiantec.cr & Abiel Porras Garro - abielpg@estudiantec.cr & Elias Castro Montero - eliasc5@estudiantec.cr & Fabián Rojas Arguedas - fabian.sajor26@estudiantec.cr 
+
+    Ultima modificacion: 2022-10-25
+    Responsables: Roy Garcia Alvarado - rvga1311@estudiantec.cr & Abiel Porras Garro - abielpg@estudiantec.cr & Elias Castro Montero - eliasc5@estudiantec.cr & Fabián Rojas Arguedas - fabian.sajor26@estudiantec.cr 
+    Resumen: Optimización de código y comentarios.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+'''
+
+
 import os
 from random import choice, seed
 import shutil
@@ -135,6 +169,14 @@ def recognize_num(img, means, stds):
 
 
 if __name__ == "__main__":
+    print("""
+Reconocedor de dígitos escritos a mano utilizando Histogramas
+Todos los archivos de codigo fuente usados para este proyecto están bajo la lincencia GNU General Public License version 3. Se permite la copia, distribucion y modificacion del software siempre que realice un seguimiento de los cambios/fechas en los archivos fuente. Cualquier modificación o software, incluido (a través del compilador) código con licencia GPL, también debe estar disponible bajo la GPL junto con las instrucciones de compilación e instalación.
+
+Copyright (C) 2022  Roy Garcia Alvarado - rvga1311@estudiantec.cr & Abiel Porras Garro - abielpg@estudiantec.cr & Elias Castro Montero - eliasc5@estudiantec.cr & Fabián Rojas Arguedas - fabian.sajor26@estudiantec.cr"
+
+Licencia: https://opensource.org/licenses/gpl-3.0.html
+    """)
     # read seed from arguments if present
     if len(sys.argv) > 1:
         seed(int(sys.argv[1]))
